@@ -6,3 +6,8 @@ gulp.task('default', function() {
         .pipe(babel())
         .pipe(gulp.dest('public/'));
 });
+
+gulp.task('resources', function() {
+    return gulp.src('resources/**/*.*')
+        .pipe(gulp.dest('public/'));
+});

@@ -15,7 +15,7 @@ app.on('ready', function() {
         height: 768
     });
 
-    mainWindow.loadUrl('file://' + __dirname + '/index.html');
+    mainWindow.loadUrl('file://' + __dirname + '/public/client/index.html');
     mainWindow.openDevTools();
 
     mainWindow.on('closed', function() {

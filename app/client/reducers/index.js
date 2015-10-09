@@ -1,11 +1,7 @@
 import { combineReducers } from "redux";
-import { articleStatus } from "./articleStatus";
 import { userContentStatus } from "./userContentStatus";
 
 // {
-//   articleStatus: {
-//     url: string
-//   },
 //   userContentStatus: {
 //     userContents: [
 //       user: string,
@@ -25,7 +21,8 @@ import { userContentStatus } from "./userContentStatus";
 //   }
 // }
 
-export default combineReducers({
-    articleStatus,
+const pttCrawlerApp = combineReducers({
     userContentStatus
 });
+
+export default pttCrawlerApp;

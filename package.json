@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "client.js",
   "scripts": {
-    "build": "gulp",
+    "build": "gulp default resources",
     "start-server": "node server.js",
     "start-client": "electron ./"
   },

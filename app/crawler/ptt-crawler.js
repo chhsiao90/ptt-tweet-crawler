@@ -58,10 +58,10 @@ export function indexer(startPageNumber, times, interval = app.ptt.indexer.inter
     });
 };
 
-export function getTweetsInArticle(article) {
+export function getArticleDetail(url) {
     return new Promise(function(resolve, reject) {
-        call(baseUrl + article.uri, function($, url) {
-            resolve(getTweets($));
+        call(url, function($, callUrl) {
+            resolve(retrieveArticleDetail($));
         });
     });
 };
@@ -119,8 +119,11 @@ function getPrePageUri($) {
     return prePageUri;
 }
 
-function getTweets($) {
-    var tweets = [];
+function retrieveArticleDetail($) {
+    var articleDetail = {};
+    articleDetail.author = /(.+)\s/.exec($('.article-meta-tag:contains("作者")').next().text())[1];
+    articleDetail.title = $('.article-meta-tag:contains("標題")').next().text();
+    articleDetail.tweets = [];
     const tweetDateRegex = app.ptt.util.tweetDateRegex;
     $('.push').each(function(index, push) {
         var $push = $(push);
@@ -129,7 +132,7 @@ function getTweets($) {
         tweet.userid = $push.find('.push-userid').text();
         tweet.content = $push.find('.push-content').text();
         tweet.tweetDate = tweetDateRegex.exec($push.find('.push-ipdatetime').text());
-        tweets.push(tweet);
+        articleDetail.tweets.push(tweet);
     });
-    return tweets;
+    return articleDetail;
 }
