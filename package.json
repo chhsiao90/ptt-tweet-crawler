@@ -1,0 +1,26 @@
+{
+  "name": "ptt-tweet-crawler",
+  "version": "0.0.1",
+  "main": "client.js",
+  "scripts": {
+    "build": "gulp",
+    "start-server": "node server.js",
+    "start-client": "electron ./"
+  },
+  "dependencies": {
+    "crawler": "^0.4.3",
+    "immutable": "^3.7.5",
+    "mongoose": "^4.1.9",
+    "react": "^0.13.3",
+    "react-redux": "^3.1.0",
+    "redux": "^3.0.2",
+    "redux-thunk": "^1.0.0",
+    "restify": "^4.0.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "electron-prebuilt": "^0.33.6",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1"
+  }
+}
