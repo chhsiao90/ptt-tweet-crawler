@@ -40,17 +40,13 @@ export function getUserContents(url) {
         userContents.push({
             user: articleDetail.author,
             type: "article",
-            content: articleDetail.title,
-            postHistories: [],
-            tweetHistories: [] 
+            content: articleDetail.title
         });
         articleDetail.tweets.forEach(function(tweet) {
             userContents.push({
                 user: tweet.userid,
                 type: "tweet",
-                content: tweet.content,
-                postHistories: [],
-                tweetHistories: [] 
+                content: tweet.content
             });
         });
         return immutable.fromJS(userContents);

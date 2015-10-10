@@ -7,6 +7,7 @@ import { userContentStatus } from "./userContentStatus";
 //       user: string,
 //       type: string,
 //       content: string,
+//       showHistories: boolean,
 //       postHistories: [
 //         postDate: date,
 //         title: string
