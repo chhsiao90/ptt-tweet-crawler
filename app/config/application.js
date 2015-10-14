@@ -3,6 +3,7 @@ var application = {};
 application.ptt = {};
 application.ptt.util = {};
 application.ptt.indexer = {};
+application.ptt.server = {};
 application.datasource = {};
 
 application.ptt.baseUrl = 'https://www.ptt.cc';
@@ -16,6 +17,9 @@ application.ptt.indexer.urlFormat = 'http://www.ptt.cc/bbs/Gossiping/index%d.htm
 
 application.ptt.util.prePageRegex = / 上頁$/;
 application.ptt.util.tweetDateRegex = /\d{2}\/\d{2}/;
+
+application.ptt.server.postPageSize = 20;
+application.ptt.server.tweetPageSize = 20;
 
 application.datasource.mongodb = 'mongodb://localhost/test';
 

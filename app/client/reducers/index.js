@@ -8,10 +8,14 @@ import { userContentStatus } from "./userContentStatus";
 //       type: string,
 //       content: string,
 //       showHistories: boolean,
+//       postHistoriesMaxPage: number,
+//       postHistoriesPage: number,
 //       postHistories: [
 //         postDate: date,
 //         title: string
 //       ],
+//       tweetHistoriesMaxPage: number,
+//       tweetHistoriesPage: number,
 //       tweetHistories: [
 //         postDate: date,
 //         title: string,
