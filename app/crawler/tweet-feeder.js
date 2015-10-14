@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { getTweetsInArticle } from "./ptt-crawler";
+import { getArticleDetail } from "./ptt-crawler";
 import Article from "../models/Article";
 import app from "./config/application.js";
 

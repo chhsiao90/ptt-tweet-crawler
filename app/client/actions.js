@@ -59,7 +59,7 @@ export function recieveNextUserPostHistories(userContentIndex, postHistories, pa
         type: NEXT_USER_POST_HISTORIES,
         userContentIndex,
         postHistories,
-        page
+        page: page + 1
     };
 };
 
@@ -68,7 +68,7 @@ export function recieveNextUserTweetHistories(userContentIndex, tweetHistories, 
         type: NEXT_USER_TWEET_HISTORIES,
         userContentIndex,
         tweetHistories,
-        page
+        page: page + 1
     };
 };
 
