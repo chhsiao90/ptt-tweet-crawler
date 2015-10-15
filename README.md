@@ -7,10 +7,14 @@ Provide web application to display the selected user's tweet log.
 Introduction
 ------------
 
-Run this application
---------------------
+ptt-tweet-crawler has a server and a client build with node.js to provide services showing selected user's tweet log.
+
+Server used [mongoose](https://github.com/Automattic/mongoose) to connect to mongodb as datasource,
+and used [restify](https://github.com/restify/node-restify) to provide restful service.
+
+Client used react & redux to provide the web to show the tweets.
 
 TODO
 ----
 
-
+Feel free to create issue or pull request if had any.
