@@ -14,13 +14,6 @@ and used [restify](https://github.com/restify/node-restify) to provide restful s
 
 Client used react & redux to provide the web to show the tweets.
 
-Screenshots
------------
-
-![imgur](http://i.imgur.com/nXO2nCf.png)
-
-![imgur](http://i.imgur.com/Uy8CuaU.png)
-
 TODO
 ----
 

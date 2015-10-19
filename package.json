@@ -1,6 +1,7 @@
 {
   "name": "ptt-tweet-crawler",
   "version": "0.0.1",
+  "description": "display selected user tweet histories",
   "main": "client.js",
   "scripts": {
     "build": "gulp",
@@ -8,6 +9,22 @@
     "client": "electron ./",
     "resources": "gulp resources"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chhsiao90/ptt-tweet-crawler.git"
+  },
+  "author": "chhsiao90",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chhsiao90/bptt-tweet-crawler/issues"
+  },
+  "homepage": "https://github.com/chhsiao90/ptt-tweet-crawler#readme",
+  "keywords": [
+      "react",
+      "redux",
+      "restify",
+      "mongo"
+  ],
   "dependencies": {
     "crawler": "^0.4.3",
     "immutable": "^3.7.5",
